@@ -37,6 +37,7 @@ export type DemoDoctor = {
 
 export type DemoContact = {
   address: string;
+  phone: string;
   instagram: string;
   schedule: string[];
 };
@@ -325,6 +326,7 @@ export const cosmetologyDemo: DemoPageData = {
     "Напишите в WhatsApp, и администратор поможет выбрать удобное время, формат консультации и подходящий стартовый уход.",
   contacts: {
     address: "Алматы, Бостандыкский район",
+    phone: "+7 (700) 000-00-00",
     instagram: "@maison.aurelle.demo",
     schedule: ["Пн-Пт: 10:00 - 20:00", "Сб: 11:00 - 18:00", "Вс: по записи"],
   },
@@ -477,6 +479,7 @@ export const dentistryDemo: DemoPageData = {
     "Оставьте сообщение в WhatsApp, и администратор поможет подобрать врача, время визита и удобный формат первичной записи.",
   contacts: {
     address: "Алматы, центр города",
+    phone: "+7 (700) 000-00-00",
     instagram: "@cyancare.dental.demo",
     schedule: ["Пн-Пт: 09:00 - 20:00", "Сб: 10:00 - 17:00", "Вс: выходной"],
   },
@@ -486,7 +489,7 @@ export const dentistryDemo: DemoPageData = {
 export const medSpaDemo: DemoPageData = {
   theme: "cosmetology",
   brand: "Aurora Med Spa",
-  cityLine: "Almaty, Bostandyk District",
+  cityLine: "Your City, Main District",
   category: "Med Spa",
   badges: ["Demo project", "Online booking", "WhatsApp"],
   heroTitle:
@@ -569,7 +572,8 @@ export const medSpaDemo: DemoPageData = {
   ctaDescription:
     "Send a message on WhatsApp and our team will help you choose the right treatment, the right timing, and the best first step.",
   contacts: {
-    address: "Almaty, Bostandyk District",
+    address: "Your City, Main District",
+    phone: "+1 (000) 000-0000",
     instagram: "@auroramedspa.demo",
     schedule: ["Mon-Fri: 10:00 AM - 8:00 PM", "Sat: 11:00 AM - 6:00 PM", "Sun: By appointment"],
   },
@@ -579,7 +583,7 @@ export const medSpaDemo: DemoPageData = {
 export const dentalClinicDemo: DemoPageData = {
   theme: "dentistry",
   brand: "DentaNova Clinic",
-  cityLine: "Almaty, City Center",
+  cityLine: "Your City, Downtown",
   category: "Dental Clinic",
   badges: ["Demo project", "Online booking", "WhatsApp"],
   heroTitle:
@@ -689,8 +693,9 @@ export const dentalClinicDemo: DemoPageData = {
   ctaDescription:
     "Send us a WhatsApp message and we will help you book a consultation, choose the right doctor, and understand the next steps.",
   contacts: {
-    address: "Almaty, City Center",
-    instagram: "@dentanova.clinic.demo",
+    address: "Your City, Downtown",
+    phone: "+1 (000) 000-0000",
+    instagram: "@dentanova.demo",
     schedule: ["Mon-Fri: 9:00 AM - 8:00 PM", "Sat: 10:00 AM - 5:00 PM", "Sun: Closed"],
   },
   ui: englishDentalUi,

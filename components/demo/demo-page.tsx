@@ -545,7 +545,7 @@ export function DemoPage({ data }: { data: DemoPageData }) {
                         rel="noreferrer"
                         className={`mt-2 inline-block text-lg font-semibold ${theme.title}`}
                       >
-                        +7 (700) 000-00-00
+                        {data.contacts.phone}
                       </a>
                     </div>
                     <div>
