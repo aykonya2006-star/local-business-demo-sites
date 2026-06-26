@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Демо-лендинги для локального бизнеса",
+  title: "Demo landing pages for local business",
   description:
-    "Портфолио из двух демонстрационных лендингов: косметология и стоматология для локального бизнеса в Казахстане.",
+    "Portfolio of Russian and English demo landing pages for cosmetology, med spa, dentistry, and dental clinic clients.",
 };
 
 const demos = [
@@ -14,8 +14,16 @@ const demos = [
     niche: "Косметология",
     description:
       "Светлый premium-лендинг с мягкими rose/beige/gold акцентами и сильным hero для записи через WhatsApp.",
-    gradient:
-      "from-[#fff6f1] via-[#f7ece3] to-[#ead5c4]",
+    gradient: "from-[#fff6f1] via-[#f7ece3] to-[#ead5c4]",
+    accent: "bg-[#b98a65]",
+  },
+  {
+    href: "/demo/med-spa",
+    name: "Aurora Med Spa",
+    niche: "Med Spa",
+    description:
+      "English premium landing page with a soft beauty-medical aesthetic, USD pricing, and WhatsApp-first booking.",
+    gradient: "from-[#fff6f1] via-[#f7ece3] to-[#ead5c4]",
     accent: "bg-[#b98a65]",
   },
   {
@@ -24,8 +32,16 @@ const demos = [
     niche: "Стоматология",
     description:
       "Чистый medical-лендинг в white/blue/cyan стилистике с ощущением доверия, порядка и современного сервиса.",
-    gradient:
-      "from-[#f7fdff] via-[#eaf7ff] to-[#d8f1ff]",
+    gradient: "from-[#f7fdff] via-[#eaf7ff] to-[#d8f1ff]",
+    accent: "bg-[#1399dc]",
+  },
+  {
+    href: "/demo/dental-clinic",
+    name: "DentaNova Clinic",
+    niche: "Dental Clinic",
+    description:
+      "English medical-style landing page with modern trust signals, USD pricing, and a consultation-led CTA.",
+    gradient: "from-[#f7fdff] via-[#eaf7ff] to-[#d8f1ff]",
     accent: "bg-[#1399dc]",
   },
 ];
@@ -42,26 +58,28 @@ export default function Home() {
               </div>
               <div className="space-y-4">
                 <h1 className="max-w-3xl font-[Iowan_Old_Style,Georgia,serif] text-5xl leading-none tracking-[-0.04em] text-slate-950 md:text-7xl">
-                  Два лендинга, которые можно показывать клиентам уже сегодня.
+                  Demo landing pages you can show local and international
+                  clients right away.
                 </h1>
                 <p className="max-w-2xl text-lg leading-8 text-slate-600 md:text-xl">
-                  Здесь собраны две нишевые demo-страницы для локального бизнеса в
-                  Казахстане. Обе сделаны без backend и без внешних ассетов, с
-                  фокусом на премиальный первый экран и заявки через WhatsApp.
+                  This portfolio now includes both Russian and English demo
+                  pages for beauty and dental niches. Every page uses the same
+                  premium design language, code-native placeholders, and
+                  WhatsApp-focused conversion flow.
                 </p>
               </div>
               <div className="flex flex-wrap gap-4">
                 <Link
                   className="rounded-full bg-slate-950 px-6 py-3 text-sm font-semibold text-white transition-transform duration-300 hover:-translate-y-0.5"
-                  href="/demo/cosmetology"
+                  href="/demo/med-spa"
                 >
-                  Открыть косметологию
+                  Open English demos
                 </Link>
                 <Link
                   className="rounded-full border border-slate-200 px-6 py-3 text-sm font-semibold text-slate-700 transition-colors duration-300 hover:border-slate-300 hover:bg-slate-50"
-                  href="/demo/dentistry"
+                  href="/demo/cosmetology"
                 >
-                  Открыть стоматологию
+                  Open Russian demos
                 </Link>
               </div>
             </div>
@@ -90,7 +108,9 @@ export default function Home() {
                         <div className="h-2 w-20 rounded-full bg-slate-300/80" />
                         <div className="h-2 w-28 rounded-full bg-slate-300/55" />
                       </div>
-                      <div className={`h-10 w-10 rounded-2xl ${demo.accent} shadow-lg`} />
+                      <div
+                        className={`h-10 w-10 rounded-2xl ${demo.accent} shadow-lg`}
+                      />
                     </div>
                     <div className="mt-5 h-24 rounded-[22px] bg-white/75" />
                     <div className="mt-4 grid grid-cols-3 gap-3">
